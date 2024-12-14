@@ -11,4 +11,8 @@ class HomeController extends Controller
         $data['page_title'] = "Redlep | Home";
         return view('home.index',$data);
     }
+    public function about(){
+        $data['page_title'] = "Redlep | About Us";
+        return view('home.about',$data);
+    }
 }
