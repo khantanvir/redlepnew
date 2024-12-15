@@ -10,7 +10,7 @@
                         <div class="row align-items-center">
                             <div class="col-lg-7">
                                 <div class="hero-slider-content" data-cues="slideInUp" data-group="images">
-                                    <h1>Professional and responsive web development.</h1>
+                                    <h1>Responsive web development.</h1>
                                     <p>Unlock your business potential with professional, responsive, and customized website development. We create user-friendly, secure, and modern websites.</p>
 
                                     <div class="slider-btn">
@@ -39,7 +39,7 @@
                         <div class="row align-items-center">
                             <div class="col-lg-7">
                                 <div class="hero-slider-content">
-                                    <h1>Custom, high-performance app development.</h1>
+                                    <h1>Custom app development.</h1>
                                     <p>Empower your business with innovative, user-friendly, and high-performance app development. We deliver custom solutions tailored to your needs.</p>
                                     <div class="slider-btn">
                                         <a href="{{ url('about-us') }}" class="default-btn">
@@ -118,32 +118,32 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="single-marketing-box icon-style">
                     <img src="{{ asset('frontend/images/icon-1.png') }}" alt="Image">
-                    <h3>Marketing research</h3>
-                    <p>Lorem consectetur ipsum sit dolor sit amet consectetur adipisicing elit</p>
+                    <h3>Planning and Analysis</h3>
+                    <p>Define the purpose, goals and Analyze the necessary technologies</p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-sm-6">
                 <div class="single-marketing-box icon-style">
                     <img src="{{ asset('frontend/images/icon-2.png') }}" alt="Image">
-                    <h3>Advertising ideas</h3>
-                    <p>Lorem consectetur ipsum sit dolor sit amet consectetur adipisicing elit</p>
+                    <h3>Design</h3>
+                    <p>Create the visual layout of the website (UI/UX design).</p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-sm-6">
                 <div class="single-marketing-box icon-style">
                     <img src="{{ asset('frontend/images/icon-3.png') }}" alt="Image">
-                    <h3>Social media marketing</h3>
-                    <p>Lorem consectetur ipsum sit dolor sit amet consectetur adipisicing elit</p>
+                    <h3>Development</h3>
+                    <p>Convert the design into a functioning website using modern technologies.</p>
                 </div>
             </div>
 
             <div class="col-lg-3 col-sm-6">
                 <div class="single-marketing-box icon-style">
                     <img src="{{ asset('frontend/images/icon-4.png') }}" alt="Image">
-                    <h3>Get more followers</h3>
-                    <p>Lorem consectetur ipsum sit dolor sit amet consectetur adipisicing elit</p>
+                    <h3>Testing and Deployment</h3>
+                    <p>Test the website for bugs, performance and security issues.</p>
                 </div>
             </div>
         </div>
@@ -165,7 +165,7 @@
             <div class="col-lg-7">
                 <div class="about-content about-content-style-two" data-cues="slideInUp">
                     <span>About us</span>
-                    <h2>For 25 years we have been employing creative digital marketing strategies that achieve outstanding results.</h2>
+                    <h2>Redlep Software Company delivers innovative software solutions, empowering businesses with smart technology.</h2>
                     <h3>We divide our working process into 4 ways</h3>
 
                     <div class="row">
@@ -174,12 +174,12 @@
                                 <li>
                                     <i class="ri-check-line"></i>
                                     <h4>Planing</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt quo corrupti.</p>
+                                    <p>Effective software development planning ensures goals, timelines, and resources align.</p>
                                 </li>
                                 <li>
                                     <i class="ri-check-line"></i>
                                     <h4>Optimizing</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt quo corrupti.</p>
+                                    <p>Enhancing performance through efficient software optimization and advanced solutions.</p>
                                 </li>
                             </ul>
                         </div>
@@ -189,18 +189,18 @@
                                 <li>
                                     <i class="ri-check-line"></i>
                                     <h4>Research</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt quo corrupti.</p>
+                                    <p>Innovating through software development and cutting-edge technology research.</p>
                                 </li>
                                 <li>
                                     <i class="ri-check-line"></i>
                                     <h4>Results</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt quo corrupti.</p>
+                                    <p>Delivering exceptional results through innovative and reliable software development.</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <a href="about.html" class="default-btn">
+                    <a href="{{ url('about-us') }}" class="default-btn">
                         View more info
                     </a>
                 </div>

@@ -79,9 +79,9 @@
                             <div class="others-options">
                                 <ul class="header-left-content">
                                     <li>
-                                        <a class="custom-tel" href="tel:+8801732930067">
+                                        <a class="custom-tel" href="https://api.whatsapp.com/send/?phone=8801732930067&text&type=phone_number&app_absent=0">
                                             <i class="ri-phone-fill"></i>
-                                            Hotline:+880 173 2930 067
+                                            Whatsapp: +8801732930067
                                         </a>
                                     </li>
                                 </ul>
