@@ -10,17 +10,12 @@
                         <div class="row align-items-center">
                             <div class="col-lg-7">
                                 <div class="hero-slider-content" data-cues="slideInUp" data-group="images">
-                                    <h1>Using your marketing experience to get your business more</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet.</p>
-        
-                                    <div class="slider-btn">
-                                        <a href="about.html" class="default-btn">
-                                            Learn more
-                                        </a>
+                                    <h1>Professional and responsive web development.</h1>
+                                    <p>Unlock your business potential with professional, responsive, and customized website development. We create user-friendly, secure, and modern websites.</p>
 
-                                        <a href="https://www.youtube.com/watch?v=qt_NZdXbksM" class="popup-youtube play-video">
-                                            <i class="flaticon-play-button"></i>
-                                            <span>Play video</span>
+                                    <div class="slider-btn">
+                                        <a href="{{ url('about-us') }}" class="default-btn">
+                                            Learn more
                                         </a>
                                     </div>
                                 </div>
@@ -44,17 +39,11 @@
                         <div class="row align-items-center">
                             <div class="col-lg-7">
                                 <div class="hero-slider-content">
-                                    <h1>Grow your business with a marketing</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet.</p>
-        
+                                    <h1>Custom, high-performance app development.</h1>
+                                    <p>Empower your business with innovative, user-friendly, and high-performance app development. We deliver custom solutions tailored to your needs.</p>
                                     <div class="slider-btn">
-                                        <a href="about.html" class="default-btn">
+                                        <a href="{{ url('about-us') }}" class="default-btn">
                                             Learn more
-                                        </a>
-
-                                        <a href="https://www.youtube.com/watch?v=qt_NZdXbksM" class="popup-youtube play-video">
-                                            <i class="flaticon-play-button"></i>
-                                            <span>Play video</span>
                                         </a>
                                     </div>
                                 </div>
@@ -78,17 +67,11 @@
                         <div class="row align-items-center">
                             <div class="col-lg-7">
                                 <div class="hero-slider-content">
-                                    <h1>Award winning digital agency in the world</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ipsum dolor sit amet.</p>
-        
+                                    <h1>Effective digital marketing for growth.</h1>
+                                    <p>Boost your business with targeted, creative, and results-driven digital marketing strategies. We help you reach the right audience and achieve success.</p>
                                     <div class="slider-btn">
-                                        <a href="about.html" class="default-btn">
+                                        <a href="{{ url('about-us') }}" class="default-btn">
                                             Learn more
-                                        </a>
-
-                                        <a href="https://www.youtube.com/watch?v=qt_NZdXbksM" class="popup-youtube play-video">
-                                            <i class="flaticon-play-button"></i>
-                                            <span>Play video</span>
                                         </a>
                                     </div>
                                 </div>
@@ -105,7 +88,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Start Carousel Thumbs -->
     <div class="thumbs-wrap">
         <div class="owl-thumbs hero-slider-thumb" data-slider-id="1">
@@ -127,8 +110,8 @@
 <section class="marketing-area pt-100 pb-70">
     <div class="container">
         <div class="section-title" data-cues="slideInUp">
-            <span>Our marketing  process</span>
-            <h2>How we work step by step with marketing</h2>
+            <span>Our Development  process</span>
+            <h2>Step-by-step web development for modern, responsive websites.</h2>
         </div>
 
         <div class="row" data-cues="slideInUp">
@@ -205,12 +188,12 @@
                             <ul>
                                 <li>
                                     <i class="ri-check-line"></i>
-                                    <h4>Research</h4>	
+                                    <h4>Research</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt quo corrupti.</p>
                                 </li>
                                 <li>
                                     <i class="ri-check-line"></i>
-                                    <h4>Results</h4>	
+                                    <h4>Results</h4>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla incidunt quo corrupti.</p>
                                 </li>
                             </ul>
@@ -613,7 +596,7 @@
             <div class="col-lg-6">
                 <div class="why-choose-us-img" data-cues="slideInUp">
                     <img src="{{ asset('frontend/images/why-choose-us-img-three.jpg') }}" alt="Image">
-                    
+
                     <div class="why-choose-us-shape">
                         <img src="{{ asset('frontend/images/why-choose-us-shape-three.png') }}" alt="Image">
                     </div>
@@ -629,7 +612,7 @@
                 <div class="single-counter">
                     <div class="count-title">
                         <h2>
-                            <span class="odometer" data-count="1">00</span> 
+                            <span class="odometer" data-count="1">00</span>
                             <span class="target">K+</span>
                         </h2>
                         <h4>People in the city</h4>
@@ -645,7 +628,7 @@
                 <div class="single-counter">
                     <div class="count-title">
                         <h2>
-                            <span class="odometer" data-count="400">00</span> 
+                            <span class="odometer" data-count="400">00</span>
                         </h2>
                         <h4>Square of city</h4>
                     </div>
@@ -660,7 +643,7 @@
                 <div class="single-counter">
                     <div class="count-title">
                         <h2>
-                            <span class="odometer" data-count="150">00</span> 
+                            <span class="odometer" data-count="150">00</span>
                             <span class="target">+</span>
                         </h2>
                         <h4>Year of foundation</h4>
@@ -676,7 +659,7 @@
                 <div class="single-counter">
                     <div class="count-title">
                         <h2>
-                            <span class="odometer" data-count="12">00</span> 
+                            <span class="odometer" data-count="12">00</span>
                             <span class="target">+</span>
                         </h2>
                         <h4>Successful programs</h4>
@@ -733,7 +716,7 @@
                 <div class="single-testimonials">
                     <i class="ri-double-quotes-r"></i>
                     <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.”</p>
-                    
+
                     <div class="testimonials-img">
                         <img src="{{ asset('frontend/images/testimonials-3.jpg') }}" alt="Image">
                         <h3>John Dona</h3>
@@ -770,7 +753,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dignissimos veniam provident voluptates deserunt similique aut quisquam pariatur aperiam in alias voluptatibus quis architecto eius unde, nam minima id delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius reprehenderit! Laboriosam obcaecati maiores placeat beatae a quis illum quaerat provident animi molestias, dolorem quo praesentium neque eum, fugiat tenetur unde, nam minima id</p>
                     </div>
                 </li>
-                
+
                 <li class="accordion-item">
                     <a class="accordion-title" href="javascript:void(0)">
                         <i class="ri-add-line"></i>
@@ -785,7 +768,7 @@
                 <li class="accordion-item">
                     <a class="accordion-title" href="javascript:void(0)">
                         <i class="ri-add-line"></i>
-                        03) What does a digital marketer do?	
+                        03) What does a digital marketer do?
                     </a>
 
                     <div class="accordion-content">
