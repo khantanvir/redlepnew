@@ -21,7 +21,7 @@ class TestimonialRepository implements TestimonialRepositoryInterface{
         $image_directory = 'front/images/testimonial/';
         $image_path = '';
         if ($data->hasFile('image')) {
-            $image_path = Utility::upload_image_to_public($data->file('image'),$image_directory);
+            $image_path = Utility::upload_image_to_public($data->file('image'),$image_directory,70,70);
         }
         $categoryData = [
             'name' => $data->input('name'),

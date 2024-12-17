@@ -42,6 +42,22 @@
                 </li>
             </ul>
         </li>
+        <li class="menu {{ (!empty($testimonial) && $testimonial==true)?'active':'' }}">
+            <a href="#testimonial_menu" data-bs-toggle="collapse" aria-expanded="{{ (!empty($testimonial) && $testimonial==true)?'true':'false' }}" class="dropdown-toggle">
+                <div class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pen-tool"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                    <span>Blogs</span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </div>
+            </a>
+            <ul class="{{ (!empty($testimonial) && $testimonial==true)?'collapse show':'collapse' }} submenu list-unstyled" id="testimonial_menu" data-bs-parent="#accordionExample">
+                <li class="{{ (!empty($add_testimonial) && $add_testimonial==true)?'active':'' }}">
+                    <a href="{{ URL::to('add-testimonial') }}"> Create Testimonial </a>
+                </li>
+            </ul>
+        </li>
         @endif
         @if(Auth::check() && Auth::user()->role=='admin' || Auth::user()->role=='manager')
         <li class="menu {{ (!empty($settings) && $settings==true)?'active':'' }}">

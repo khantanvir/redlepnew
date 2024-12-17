@@ -14,6 +14,7 @@ use App\Http\Controllers\Agent\AgentTaskController;
 use App\Http\Controllers\Blog\BlogController;
 use App\Http\Controllers\Teacher\TeacherController;
 use App\Http\Controllers\Home\HomeController;
+use App\Http\Controllers\Testimonial\TestimonialController;
 
 Route::controller(IndexController::class)->group(function () {
     Route::get('/', 'index')->name('home');
@@ -75,3 +76,5 @@ Route::get('/clear-cache', function () {
     Artisan::call('optimize:clear');
     return 'All Cached Cleared!';
 });
+
+Route::group([], base_path('routes/admin.php'));
