@@ -221,20 +221,16 @@
                     <div class="single-services box card-bg top-content">
                         <i class="flaticon-optimization"></i>
                         <h3>
-                            <a href="services-details.html">SEO optimization</a>
+                            <a href="javascript://">SEO optimization</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut consequuntur rerum voluptatum, dignissimos offic autem dolor repudiandae</p>
+                        <p>SEO optimization enhances website visibility, driving organic traffic and higher rankings.</p>
                     </div>
 
                     <div class="single-services box card-bg bg-1 bottom-content">
                         <h3>
-                            <a href="services-details.html">SEO optimization</a>
+                            <a href="javascript://">SEO optimization</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet deserunt voluptatibus mollitia hic, cum praesentium similique ipsa veniam quidem obcaecati ut expedita esse eaque, quam debitis. Eum, odit laudantium  amet consectetur.</p>
-
-                        <a href="services-details.html" class="default-btn">
-                            Learn more
-                        </a>
+                        <p>SEO optimization enhances website visibility, driving organic traffic and higher rankings. Key elements include keyword research, quality content, fast loading speeds, mobile-friendliness, and backlinks. Improve user experience and stay competitive with effective SEO strategies.</p>
                     </div>
                 </div>
             </div>
@@ -244,20 +240,16 @@
                     <div class="single-services box card-bg top-content">
                         <i class="flaticon-content"></i>
                         <h3>
-                            <a href="services-details.html">Content marketing</a>
+                            <a href="javascript://">Web Development</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut consequuntur rerum voluptatum, dignissimos offic autem dolor repudiandae</p>
+                        <p>Web development involves creating, building, and maintaining websites and web applications.</p>
                     </div>
 
                     <div class="single-services box card-bg bg-2 bottom-content">
                         <h3>
-                            <a href="services-details.html">Content marketing</a>
+                            <a href="javascript://">Web Development</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet deserunt voluptatibus mollitia hic, cum praesentium similique ipsa veniam quidem obcaecati ut expedita esse eaque, quam debitis. Eum, odit laudantium  amet consectetur.</p>
-
-                        <a href="services-details.html" class="default-btn">
-                            Learn more
-                        </a>
+                        <p>Web development involves creating, building, and maintaining websites and web applications. It covers front-end design, back-end programming, responsive layouts, and performance optimization. Key technologies include HTML, CSS, JavaScript, and frameworks to deliver user-friendly, functional sites.</p>
                     </div>
                 </div>
             </div>
@@ -267,20 +259,16 @@
                     <div class="single-services box card-bg top-content">
                         <i class="flaticon-attraction"></i>
                         <h3>
-                            <a href="services-details.html">Lead magnet creation</a>
+                            <a href="javascript://">Lead Generation</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut consequuntur rerum voluptatum, dignissimos offic autem dolor repudiandae</p>
+                        <p>Lead generation is the process of attracting and converting prospects into potential customers.</p>
                     </div>
 
                     <div class="single-services box card-bg bg-3 bottom-content">
                         <h3>
-                            <a href="services-details.html">Lead magnet creation</a>
+                            <a href="javascript://">Lead Generation</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet deserunt voluptatibus mollitia hic, cum praesentium similique ipsa veniam quidem obcaecati ut expedita esse eaque, quam debitis. Eum, odit laudantium  amet consectetur.</p>
-
-                        <a href="services-details.html" class="default-btn">
-                            Learn more
-                        </a>
+                        <p>Lead generation is the process of attracting and converting prospects into potential customers. It involves strategies like content marketing, email campaigns, social media outreach, and paid ads. By nurturing leads with value-driven interactions, businesses boost conversions and sales.</p>
                     </div>
                 </div>
             </div>
@@ -290,20 +278,16 @@
                     <div class="single-services box card-bg top-content">
                         <i class="flaticon-web-analytics"></i>
                         <h3>
-                            <a href="services-details.html">Web analytics</a>
+                            <a href="javascript://">App Development</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut consequuntur rerum voluptatum, dignissimos offic autem dolor repudiandae</p>
+                        <p>Mobile app development involves creating software for smartphones and tablets</p>
                     </div>
 
                     <div class="single-services box card-bg bg-4 bottom-content">
                         <h3>
-                            <a href="services-details.html">Web analytics</a>
+                            <a href="javascript://">App Development</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet deserunt voluptatibus mollitia hic, cum praesentium similique ipsa veniam quidem obcaecati ut expedita esse eaque, quam debitis. Eum, odit laudantium  amet consectetur.</p>
-
-                        <a href="services-details.html" class="default-btn">
-                            Learn more
-                        </a>
+                        <p>Mobile app development involves creating software for smartphones and tablets, focusing on user experience, performance, and functionality. Using platforms like iOS and Android, it combines coding, design, and testing to deliver apps that solve problems, engage users, and drive business growth.</p>
                     </div>
                 </div>
             </div>
@@ -313,43 +297,34 @@
                     <div class="single-services box card-bg top-content">
                         <i class="flaticon-video-marketing"></i>
                         <h3>
-                            <a href="services-details.html">Video marketing</a>
+                            <a href="javascript://">Digital marketing</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut consequuntur rerum voluptatum, dignissimos offic autem dolor repudiandae</p>
+                        <p>Digital marketing promotes products or services online through channels</p>
                     </div>
 
                     <div class="single-services box card-bg bg-5 bottom-content">
                         <h3>
-                            <a href="services-details.html">Video marketing</a>
+                            <a href="javascript://">Digital marketing</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet deserunt voluptatibus mollitia hic, cum praesentium similique ipsa veniam quidem obcaecati ut expedita esse eaque, quam debitis. Eum, odit laudantium  amet consectetur.</p>
-
-                        <a href="services-details.html" class="default-btn">
-                            Learn more
-                        </a>
+                        <p>Digital marketing promotes products or services online through channels like social media, search engines, email, and websites. It combines SEO, content marketing, PPC, and analytics to target audiences, drive traffic, boost engagement, and increase conversions effectively.</p>
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-4 col-md-6">
                 <div class="single-services-box-wrap">
                     <div class="single-services box card-bg top-content">
                         <i class="flaticon-plan"></i>
                         <h3>
-                            <a href="services-details.html">Strategy &amp; planning</a>
+                            <a href="javascript://">UI / UX</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ut consequuntur rerum voluptatum, dignissimos offic autem dolor repudiandae</p>
+                        <p>UI/UX design focuses on creating intuitive, engaging digital experiences.</p>
                     </div>
 
                     <div class="single-services box card-bg bg-6 bottom-content">
                         <h3>
-                            <a href="services-details.html">Strategy &amp; planning</a>
+                            <a href="javascript://">UI / UX</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet deserunt voluptatibus mollitia hic, cum praesentium similique ipsa veniam quidem obcaecati ut expedita esse eaque, quam debitis. Eum, odit laudantium  amet consectetur.</p>
-
-                        <a href="services-details.html" class="default-btn">
-                            Learn more
-                        </a>
+                        <p>UI/UX design focuses on creating intuitive, engaging digital experiences. UI (User Interface) ensures visually appealing layouts, while UX (User Experience) emphasizes seamless usability. Together, they enhance user satisfaction, drive engagement, and achieve business goals.</p>
                     </div>
                 </div>
             </div>
