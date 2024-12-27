@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/custom.css') }}">
-    <link rel="icon" type="image/png" href="{{ asset('frontend/images/favicon.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('frontend/images/logo/favicon.png') }}">
     <title>{{ (!empty($page_title))?$page_title:'' }}</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
                    <div class="mobile-responsive-menu">
                         <div class="logo">
                             <a href="index.html">
-                                <img src="{{ asset('frontend/images/logo.png') }}" alt="logo">
+                                <img src="{{ asset('frontend/images/logo/redlep-logo.png') }}" alt="logo">
                             </a>
                         </div>
 
@@ -50,7 +50,7 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="index.html">
-                            <img src="{{ asset('frontend/images/logo.png') }}" alt="logo">
+                            <img src="{{ asset('frontend/images/logo/redlep-logo.png') }}" alt="logo">
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav m-auto">

@@ -23,7 +23,7 @@
 
                             <div class="col-lg-5">
                                 <div class="slider-img">
-                                    <img src="{{ asset('frontend/images/slider-img-1.jpg') }}" alt="Image">
+                                    <img src="{{ asset('frontend/images/banner/web-development.jpg') }}" alt="Image">
                                 </div>
                             </div>
                         </div>
@@ -51,7 +51,7 @@
 
                             <div class="col-lg-5">
                                 <div class="slider-img">
-                                    <img src="{{ asset('frontend/images/slider-img-2.jpg') }}" alt="Image">
+                                    <img src="{{ asset('frontend/images/banner/app-development.jpg') }}" alt="Image">
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
 
                             <div class="col-lg-5">
                                 <div class="slider-img">
-                                    <img src="{{ asset('frontend/images/slider-img-3.jpg') }}" alt="Image">
+                                    <img src="{{ asset('frontend/images/banner/digital-marketing.png') }}" alt="Image">
                                 </div>
                             </div>
                         </div>
@@ -154,7 +154,7 @@
         <div class="row align-items-center">
             <div class="col-lg-5" data-cues="slideInUp">
                 <div class="about-img-three">
-                    <img src="{{ asset('frontend/images/about-img-3.jpg') }}" alt="Image">
+                    <img src="{{ asset('frontend/images/about/about-us.jpg') }}" alt="Image">
 
                     <div class="about-shape-3">
                         <img src="{{ asset('frontend/images/about-shape-3.png') }}" alt="Image">
@@ -348,11 +348,11 @@
         <div class="row justify-content-md-center" data-cues="slideInUp">
             <div class="col-lg-4 col-md-6">
                 <div class="single-team-member">
-                    <img src="{{ asset('frontend/images/team-1.jpg') }}" alt="Image">
+                    <img src="{{ asset('frontend/images/team/tanvir.jpg') }}" alt="Image">
 
                     <div class="team-content">
-                        <h3>Chris Harrice</h3>
-                        <span>Managing director</span>
+                        <h3>Tanvir Nawaz Khan</h3>
+                        <span>Founder & Project Manager</span>
 
                         <div class="team-social">
                             <a href="javascript:;" class="control">
@@ -361,23 +361,13 @@
 
                             <ul>
                                 <li>
-                                    <a href="https://www.facebook.com/" target="_blank">
+                                    <a href="https://www.facebook.com/tanvir.nawaz.566/" target="_blank">
                                         <i class="ri-facebook-fill"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/" target="_blank">
-                                        <i class="ri-instagram-line"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/" target="_blank">
+                                    <a href="https://www.linkedin.com/in/tanvir-khan-71950872/" target="_blank">
                                         <i class="ri-linkedin-fill"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/" target="_blank">
-                                        <i class="ri-twitter-fill"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -388,11 +378,11 @@
 
             <div class="col-lg-4 col-md-6">
                 <div class="single-team-member">
-                    <img src="{{ asset('frontend/images/team-2.jpg') }}" alt="Image">
+                    <img src="{{ asset('frontend/images/team/sohel.jpg') }}" alt="Image">
 
                     <div class="team-content">
-                        <h3>Rachel Patrina</h3>
-                        <span>Commercial director</span>
+                        <h3>Firdaus Sohel</h3>
+                        <span>Digital Marketor</span>
 
                         <div class="team-social">
                             <a href="javascript:;" class="control">
@@ -401,23 +391,13 @@
 
                             <ul>
                                 <li>
-                                    <a href="https://www.facebook.com/" target="_blank">
+                                    <a href="https://www.facebook.com/sabujav" target="_blank">
                                         <i class="ri-facebook-fill"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/" target="_blank">
-                                        <i class="ri-instagram-line"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/" target="_blank">
+                                    <a href="https://www.linkedin.com/in/md-firdaus-islam-6732b045/" target="_blank">
                                         <i class="ri-linkedin-fill"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/" target="_blank">
-                                        <i class="ri-twitter-fill"></i>
                                     </a>
                                 </li>
                             </ul>
