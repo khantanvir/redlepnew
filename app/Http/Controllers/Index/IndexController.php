@@ -15,4 +15,8 @@ class IndexController extends Controller
         $data['page_title'] = "Redlep | About Us";
         return view('home.about',$data);
     }
+    public function faq(){
+        $data['page_title'] = "Redlep | FAQ";
+        return view('home.faq',$data);
+    }
 }

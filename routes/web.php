@@ -19,6 +19,7 @@ use App\Http\Controllers\Testimonial\TestimonialController;
 Route::controller(IndexController::class)->group(function () {
     Route::get('/', 'index')->name('home');
     Route::get('about-us', 'about')->name('about_us');
+    Route::get('faq', 'faq')->name('faq');
 });
 
 Route::controller(HomeController::class)->group(function () {

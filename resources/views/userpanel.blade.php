@@ -36,7 +36,7 @@
                         <div class="others-options-for-mobile-devices">
                             <ul class="header-left-content">
                                 <li>
-                                    <a class="custom-tel" href="tel:+8801732930067">
+                                    <a class="custom-tel" href="https://api.whatsapp.com/send/?phone=8801732930067&text&type=phone_number&app_absent=0">
                                         <i class="ri-phone-fill"></i>
                                         Hotline:+880 173 2930 067
                                     </a>
@@ -102,25 +102,25 @@
                         <a href="index.html" class="logo">
                             <img src="{{ asset('frontend/images/logo.png') }}" alt="Image">
                         </a>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio officia facere ab, mollitia cum eaque corrupti quasi adipisci veniam earum sint consequatur, in sapiente incidunt</p>
+                        <p>Redlep Software Company delivers innovative software solutions, including web and app development, digital transformation, and tailored tech strategies for business success.</p>
                         <ul class="social-icon">
                             <li>
-                                <a href="https://www.facebook.com/" target="_blank">
+                                <a href="https://www.facebook.com/redlep1/" target="_blank">
                                     <i class="ri-facebook-fill"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank">
+                                <a href="https://www.linkedin.com/company/redlep/?viewAsMember=true" target="_blank">
                                     <i class="ri-instagram-line"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/" target="_blank">
+                                <a href="https://www.linkedin.com/company/redlep/?viewAsMember=true" target="_blank">
                                     <i class="ri-linkedin-fill"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/" target="_blank">
+                                <a href="https://x.com/TanvirKhannst" target="_blank">
                                     <i class="ri-twitter-fill"></i>
                                 </a>
                             </li>
@@ -133,19 +133,19 @@
 
                         <ul class="import-link">
                             <li>
-                                <a href="case-details.html">Case study details</a>
+                                <a href="case-details.html">Services</a>
                             </li>
                             <li>
-                                <a href="about.html">What we do</a>
+                                <a href="about.html">Projects</a>
                             </li>
                             <li>
-                                <a href="blog.html">Blog</a>
+                                <a href="blog.html">Why Redlep</a>
                             </li>
                             <li>
                                 <a href="faq.html">FAQ</a>
                             </li>
                             <li>
-                                <a href="team.html">Team</a>
+                                <a href="team.html">Blog</a>
                             </li>
                         </ul>
                     </div>
@@ -157,7 +157,7 @@
                         <ul class="address">
                             <li class="location">
                                 <i class="ri-map-pin-line"></i>
-                                2976 Sunrise Road Las Vegas, NV 89108
+                                Mollah Tower, Uttar Badda. Dhaka, Bangladesh
                             </li>
                             <li>
                                 <i class="ri-mail-line"></i>
@@ -165,7 +165,7 @@
                             </li>
                             <li>
                                 <i class="ri-phone-line"></i>
-                                <a href="tel:+1-(514)-312-5678">+1 (514) 312-5678</a>
+                                <a href="https://api.whatsapp.com/send/?phone=8801732930067&text&type=phone_number&app_absent=0">+8801732930067</a>
                             </li>
                             <li class="location">
                                 <i class="ri-time-line"></i>
@@ -197,7 +197,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <p>© Bkro is Proudly Owned by <a href="https://envytheme.com/" target="_blank">EnvyTheme</a></p>
+                    <p>© Redlep is Proudly Owned by <a href="https://redlep.com/" target="_blank">Redlep</a></p>
                 </div>
                 <div class="col-lg-6">
                     <ul>

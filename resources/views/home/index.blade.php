@@ -411,8 +411,8 @@
                     <img src="{{ asset('frontend/images/team-3.jpg') }}" alt="Image">
 
                     <div class="team-content">
-                        <h3>John Marc</h3>
-                        <span>Marketing manager</span>
+                        <h3>Shahdat Hossain Mamun</h3>
+                        <span>UI/UX & Web Designer</span>
 
                         <div class="team-social">
                             <a href="javascript:;" class="control">
@@ -421,25 +421,25 @@
 
                             <ul>
                                 <li>
-                                    <a href="https://www.facebook.com/" target="_blank">
+                                    <a href="#" target="_blank">
                                         <i class="ri-facebook-fill"></i>
                                     </a>
                                 </li>
-                                <li>
+                                {{-- <li>
                                     <a href="https://www.instagram.com/" target="_blank">
                                         <i class="ri-instagram-line"></i>
                                     </a>
-                                </li>
+                                </li> --}}
                                 <li>
-                                    <a href="https://www.linkedin.com/" target="_blank">
+                                    <a href="#" target="_blank">
                                         <i class="ri-linkedin-fill"></i>
                                     </a>
                                 </li>
-                                <li>
+                                {{-- <li>
                                     <a href="https://twitter.com/" target="_blank">
                                         <i class="ri-twitter-fill"></i>
                                     </a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>
@@ -567,10 +567,10 @@
                 <div class="single-counter">
                     <div class="count-title">
                         <h2>
-                            <span class="odometer" data-count="1">00</span>
+                            <span class="odometer" data-count="1.5">00</span>
                             <span class="target">K+</span>
                         </h2>
-                        <h4>People in the city</h4>
+                        <h4>Government and Local Projects Implemented</h4>
                     </div>
 
                     <div class="counter-shape">
@@ -583,9 +583,9 @@
                 <div class="single-counter">
                     <div class="count-title">
                         <h2>
-                            <span class="odometer" data-count="400">00</span>
+                            <span class="odometer" data-count="800">00</span>+
                         </h2>
-                        <h4>Square of city</h4>
+                        <h4>Freelancing and Other Project</h4>
                     </div>
 
                     <div class="counter-shape shape-2">
@@ -598,10 +598,10 @@
                 <div class="single-counter">
                     <div class="count-title">
                         <h2>
-                            <span class="odometer" data-count="150">00</span>
+                            <span class="odometer" data-count="200">00</span>
                             <span class="target">+</span>
                         </h2>
-                        <h4>Year of foundation</h4>
+                        <h4>Total Clients</h4>
                     </div>
 
                     <div class="counter-shape">
@@ -630,7 +630,7 @@
             <img src="{{ asset('frontend/images/video-img.jpg') }}" alt="Image">
 
             <div class="video-button">
-                <a href="https://www.youtube.com/watch?v=qt_NZdXbksM" class="popup-youtube">
+                <a href="https://www.youtube.com/watch?v=XOkyxOsUhXA" class="popup-youtube">
                     <i class="flaticon-play-button"></i>
                 </a>
             </div>
@@ -701,66 +701,55 @@
                 <li class="accordion-item">
                     <a class="accordion-title active" href="javascript:void(0)">
                         <i class="ri-add-line"></i>
-                        01) What is a digital marketing agency?
+                        01) What is a Redlep digital agency?
                     </a>
 
                     <div class="accordion-content show">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dignissimos veniam provident voluptates deserunt similique aut quisquam pariatur aperiam in alias voluptatibus quis architecto eius unde, nam minima id delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius reprehenderit! Laboriosam obcaecati maiores placeat beatae a quis illum quaerat provident animi molestias, dolorem quo praesentium neque eum, fugiat tenetur unde, nam minima id</p>
+                        <p>Redlep Digital Agency specializes in crafting innovative digital solutions to empower businesses in the online space. From stunning web designs to data-driven marketing strategies, we focus on enhancing brand visibility and driving results. Our team excels in web development, SEO, social media management, and content creation, ensuring every project reflects creativity, quality, and impact. Partner with Redlep to transform your digital presence.</p>
                     </div>
                 </li>
 
                 <li class="accordion-item">
                     <a class="accordion-title" href="javascript:void(0)">
                         <i class="ri-add-line"></i>
-                        02) What’s the biggest mistake digital marketers make?
+                        02) What does Redlep Software Company specialize in?
                     </a>
 
                     <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dignissimos veniam provident voluptates deserunt similique aut quisquam pariatur aperiam in alias voluptatibus quis architecto eius unde, nam minima id delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius reprehenderit! Laboriosam obcaecati maiores placeat beatae a quis illum quaerat provident animi molestias, dolorem quo praesentium neque eum, fugiat tenetur unde, nam minima id</p>
+                        <p>Redlep Software Company specializes in delivering tailored software solutions, including web and mobile app development, custom enterprise software, and digital transformation services. We combine cutting-edge technology with creative strategies to help businesses thrive in a competitive digital landscape.</p>
                     </div>
                 </li>
 
                 <li class="accordion-item">
                     <a class="accordion-title" href="javascript:void(0)">
                         <i class="ri-add-line"></i>
-                        03) What does a digital marketer do?
+                        03) How does Redlep ensure project success?
                     </a>
 
                     <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dignissimos veniam provident voluptates deserunt similique aut quisquam pariatur aperiam in alias voluptatibus quis architecto eius unde, nam minima id delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius reprehenderit! Laboriosam obcaecati maiores placeat beatae a quis illum quaerat provident animi molestias, dolorem quo praesentium neque eum, fugiat tenetur unde, nam minima id</p>
+                        <p>Redlep ensures project success by collaborating closely with clients, understanding their unique needs, and delivering high-quality, scalable solutions. Our agile development process, coupled with a focus on innovation and efficiency, guarantees timely delivery and long-term satisfaction.</p>
                     </div>
                 </li>
 
                 <li class="accordion-item">
                     <a class="accordion-title" href="javascript:void(0)">
                         <i class="ri-add-line"></i>
-                        04) How does digital marketing work?
+                        04) What industries does Redlep serve?
                     </a>
 
                     <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dignissimos veniam provident voluptates deserunt similique aut quisquam pariatur aperiam in alias voluptatibus quis architecto eius unde, nam minima id delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius reprehenderit! Laboriosam obcaecati maiores placeat beatae a quis illum quaerat provident animi molestias, dolorem quo praesentium neque eum, fugiat tenetur unde, nam minima id</p>
+                        <p>Redlep serves a wide range of industries, including healthcare, finance, education, e-commerce, and more. Our versatile team adapts to the specific needs of each sector, ensuring our solutions align perfectly with business goals.</p>
                     </div>
                 </li>
 
                 <li class="accordion-item">
                     <a class="accordion-title" href="javascript:void(0)">
                         <i class="ri-add-line"></i>
-                        05) What are typical roles in digital marketing?
+                        05) Why choose Redlep Software Company?
                     </a>
 
                     <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dignissimos veniam provident voluptates deserunt similique aut quisquam pariatur aperiam in alias voluptatibus quis architecto eius unde, nam minima id delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius reprehenderit! Laboriosam obcaecati maiores placeat beatae a quis illum quaerat provident animi molestias, dolorem quo praesentium neque eum, fugiat tenetur unde, nam minima id</p>
-                    </div>
-                </li>
-
-                <li class="accordion-item">
-                    <a class="accordion-title" href="javascript:void(0)">
-                        <i class="ri-add-line"></i>
-                        06) How much does social media marketing cost?
-                    </a>
-
-                    <div class="accordion-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dignissimos veniam provident voluptates deserunt similique aut quisquam pariatur aperiam in alias voluptatibus quis architecto eius unde, nam minima id delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eius reprehenderit! Laboriosam obcaecati maiores placeat beatae a quis illum quaerat provident animi molestias, dolorem quo praesentium neque eum, fugiat tenetur unde, nam minima id</p>
+                        <p>Redlep Software Company stands out for its commitment to excellence, client-focused approach, and expertise in modern technologies. We deliver solutions that not only meet your requirements but also exceed expectations, empowering your business for the future.</p>
                     </div>
                 </li>
             </ul>
