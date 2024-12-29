@@ -24,6 +24,7 @@ return new class extends Migration
             $table->text('alt_tag')->nullable();
             $table->text('image')->nullable();
 			$table->text('slug')->nullable();
+			$table->text('comments')->nullable();
             $table->tinyInteger('status')->default(0)->nullable();
             $table->timestamps();
         });

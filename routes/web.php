@@ -20,6 +20,7 @@ Route::controller(IndexController::class)->group(function () {
     Route::get('/', 'index')->name('home');
     Route::get('about-us', 'about')->name('about_us');
     Route::get('faq', 'faq')->name('faq');
+    Route::get('blog-details/{slug?}', 'blog_details');
 });
 
 Route::controller(HomeController::class)->group(function () {

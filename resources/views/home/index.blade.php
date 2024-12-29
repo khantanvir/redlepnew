@@ -637,58 +637,7 @@
         </div>
     </div>
 </div>
-<section class="testimonials-area pt-100 pb-70">
-    <div class="container">
-        <div class="section-title" data-cues="slideInUp">
-            <span>Testimonials</span>
-            <h2>What our customers say</h2>
-        </div>
-
-        <div class="testimonials-slider-bg">
-            <div class="testimonials-slider owl-carousel owl-theme">
-                <div class="single-testimonials">
-                    <i class="ri-double-quotes-r"></i>
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.”</p>
-
-                    <div class="testimonials-img">
-                        <img src="{{ asset('frontend/images/testimonials-1.jpg') }}" alt="Image">
-                        <h3>Alen Meair</h3>
-                        <span>Developer</span>
-                    </div>
-                </div>
-
-                <div class="single-testimonials">
-                    <i class="ri-double-quotes-r"></i>
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.”</p>
-
-                    <div class="testimonials-img">
-                        <img src="{{ asset('frontend/images/testimonials-2.jpg') }}" alt="Image">
-                        <h3>Axon Detos</h3>
-                        <span>CEO</span>
-                    </div>
-                </div>
-
-                <div class="single-testimonials">
-                    <i class="ri-double-quotes-r"></i>
-                    <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.”</p>
-
-                    <div class="testimonials-img">
-                        <img src="{{ asset('frontend/images/testimonials-3.jpg') }}" alt="Image">
-                        <h3>John Dona</h3>
-                        <span>Designer</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="shape shape-1">
-                <img src="{{ asset('frontend/images/shape-1.png') }}" alt="Image">
-            </div>
-            <div class="shape shape-2">
-                <img src="{{ asset('frontend/images/shape-2.png') }}" alt="Image">
-            </div>
-        </div>
-    </div>
-</section>
+@include('components.testimonial.testimonial')
 <section class="faq-area bg-color-e9f7fe ptb-100">
     <div class="container">
         <div class="section-title" data-cues="slideInUp">
@@ -771,71 +720,37 @@
         </div>
 
         <div class="row justify-content-md-center" data-cues="slideInUp">
+            @forelse ($blog_list as $blog)
             <div class="col-lg-4 col-md-6">
                 <div class="single-blog">
-                    <a href="blog-details.html">
+                    <a href="{{ url('blog-details/'.$blog->slug) }}">
+                        @if (!empty($blog->image))
+                        <img style="width: 443px; height: 262px;" src="{{ asset($blog->image) }}" alt="Image">
+                        @else
                         <img src="{{ asset('frontend/images/blog-4.jpg') }}" alt="Image">
+                        @endif
+                        
                     </a>
                     <span>
                         <i class="ri-calendar-line"></i>
-                        1 March, 2024
+                        {{ (!empty($blog->created_at)) ? date('F d Y', strtotime($blog->created_at)):'' }}
                     </span>
                     <h3>
-                        <a href="blog-details.html">
-                            What is a digital marketing strategy?
+                        <a href="{{ url('blog-details/'.$blog->slug) }}">
+                            {{ App\Models\Blog\Blog::stringSubstrLimit($blog->title,70) ?? '' }}
                         </a>
                     </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore consectetur.</p>
+                    <p>{{ App\Models\Blog\Blog::stringSubstrLimit($blog->long_description,110) ?? '' }}</p>
 
-                    <a href="blog-details.html" class="default-btn">
+                    <a href="{{ url('blog-details/'.$blog->slug) }}" class="default-btn">
                         Learn more
                     </a>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog">
-                    <a href="blog-details.html">
-                        <img src="{{ asset('frontend/images/blog-5.jpg') }}" alt="Image">
-                    </a>
-                    <span>
-                        <i class="ri-calendar-line"></i>
-                        2 March, 2024
-                    </span>
-                    <h3>
-                        <a href="blog-details.html">
-                            Top tips to get more  customers
-                        </a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore consectetur.</p>
-
-                    <a href="blog-details.html" class="default-btn">
-                        Learn more
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog">
-                    <a href="blog-details.html">
-                        <img src="{{ asset('frontend/images/blog-6.jpg') }}" alt="Image">
-                    </a>
-                    <span>
-                        <i class="ri-calendar-line"></i>
-                        3 March, 2024
-                    </span>
-                    <h3>
-                        <a href="blog-details.html">
-                            What is business analysis?
-                        </a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore consectetur.</p>
-
-                    <a href="blog-details.html" class="default-btn">
-                        Learn more
-                    </a>
-                </div>
-            </div>
+            @empty
+                
+            @endforelse
+            
         </div>
     </div>
 </section>

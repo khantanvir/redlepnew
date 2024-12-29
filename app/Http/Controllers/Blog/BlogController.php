@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\File;
 use Intervention\Image\Laravel\Facades\Image;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
+use App\Traits\Utility;
 
 class BlogController extends Controller{
-    use Service;
+    use Service, Utility;
     public function all_blog_categories($id=NULL){
         if(!Auth::check()){
             Session::flash('error','Login First Then Create Blog');
@@ -135,31 +136,18 @@ class BlogController extends Controller{
             if (File::exists(asset($blog->image))) {
                 File::delete(asset($blog->image));
             }
-            $ext = $image1->getClientOriginalExtension();
-            $filename = $image1->getClientOriginalName();
-            $filename = Service::slug_create($filename).rand(11, 99).'.'.$ext;
-            $image_resize = Image::make($image1->getRealPath());
-            $image_resize->resize(1200, 644);
-            $upload_path = 'backend/images/blog/';
-            Service::createDirectory($upload_path);
-            $image_resize->save(public_path('backend/images/blog/'.$filename));
-            $blog->image = 'backend/images/blog/'.$filename;
+            $image_directory = 'frontend/images/blog/';
+            $image_path = Utility::upload_image_to_public($request->image,$image_directory,538,909);
+            $blog->image = $image_path;
         }
         //upload author image
-        $image2 = $request->author_image;
         if($request->hasFile('author_image')) {
             if (File::exists(asset($blog->author_image))) {
                 File::delete(asset($blog->author_image));
             }
-            $ext = $image2->getClientOriginalExtension();
-            $filename = $image2->getClientOriginalName();
-            $filename = Service::slug_create($filename).rand(11, 99).'.'.$ext;
-            $image_resize = Image::make($image2->getRealPath());
-            $image_resize->resize(100, 100);
-            $upload_path = 'backend/images/blog/author/';
-            Service::createDirectory($upload_path);
-            $image_resize->save(public_path('backend/images/blog/author/'.$filename));
-            $blog->author_image = 'backend/images/blog/author/'.$filename;
+            $image_directory = 'frontend/images/blog/author/';
+            $image_path1 = Utility::upload_image_to_public($request->author_image,$image_directory,100,100);
+            $blog->author_image = $image_path1;
         }
         $blog->save();
         Session::flash('success','Blog Data Updated');
