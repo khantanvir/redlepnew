@@ -22,6 +22,22 @@ class IndexController extends Controller
         $data['page_title'] = "Redlep | FAQ";
         return view('home.faq',$data);
     }
+    public function services(){
+        $data['page_title'] = "Redlep | Services";
+        return view('home.services',$data);
+    }
+    public function why_us(){
+        $data['page_title'] = "Redlep | Why Us";
+        return view('home.why_us',$data);
+    }
+    public function privacy_policy(){
+        $data['page_title'] = "Redlep | Privacy & Policy";
+        return view('home.privacy_policy',$data);
+    }
+    public function terms_conditions(){
+        $data['page_title'] = "Redlep | Terms & Conditions";
+        return view('home.terms_conditions',$data);
+    }
     public function blog_details($slug=NULL){
         $data['page_title'] = "Redlep | Blog Details";
         $data['blog'] = Blog::where('slug',$slug)->first();

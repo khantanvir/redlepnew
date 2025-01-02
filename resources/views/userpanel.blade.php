@@ -28,7 +28,7 @@
                 <div class="container">
                    <div class="mobile-responsive-menu">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="{{ url('/') }}">
                                 <img src="{{ asset('frontend/images/logo/redlep-logo.png') }}" alt="logo">
                             </a>
                         </div>
@@ -49,7 +49,7 @@
             <div class="desktop-nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="{{ url('/') }}">
                             <img src="{{ asset('frontend/images/logo/redlep-logo.png') }}" alt="logo">
                         </a>
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -61,13 +61,13 @@
                                     <a href="{{ route('about_us') }}" class="nav-link">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">Services</a>
+                                    <a href="{{ route('services') }}" class="nav-link">Services</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">Projects</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">Why Us</a>
+                                    <a href="{{ route('why_us') }}" class="nav-link">Why Us</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">Blog</a>
@@ -100,7 +100,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-footer-widget">
                         <a href="index.html" class="logo">
-                            <img src="{{ asset('frontend/images/logo.png') }}" alt="Image">
+                            <img src="{{ asset('frontend/images/logo/redlep-logo.png') }}" alt="Image">
                         </a>
                         <p>Redlep Software Company delivers innovative software solutions, including web and app development, digital transformation, and tailored tech strategies for business success.</p>
                         <ul class="social-icon">
@@ -133,19 +133,19 @@
 
                         <ul class="import-link">
                             <li>
-                                <a href="case-details.html">Services</a>
+                                <a href="{{ route('services') }}">Services</a>
                             </li>
                             <li>
-                                <a href="about.html">Projects</a>
+                                <a href="{{ route('about_us') }}">About</a>
                             </li>
                             <li>
-                                <a href="blog.html">Why Redlep</a>
+                                <a href="{{ route('why_us') }}">Why Redlep</a>
                             </li>
                             <li>
-                                <a href="faq.html">FAQ</a>
+                                <a href="{{ route('faq') }}">FAQ</a>
                             </li>
                             <li>
-                                <a href="team.html">Blog</a>
+                                <a href="#">Blog</a>
                             </li>
                         </ul>
                     </div>
@@ -161,7 +161,7 @@
                             </li>
                             <li>
                                 <i class="ri-mail-line"></i>
-                                <a href="/cdn-cgi/l/email-protection#5c34393030331c3e372e33723f3331"><span class="__cf_email__" data-cfemail="cda5a8a1a1a28dafa6bfa2e3aea2a0">[email�&nbsp;protected]</span></a>
+                                <a href="mailto:info@redlep.com"><span class="__cf_email__">info@redlep.com</span></a>
                             </li>
                             <li>
                                 <i class="ri-phone-line"></i>
@@ -202,10 +202,10 @@
                 <div class="col-lg-6">
                     <ul>
                         <li>
-                            <a href="privacy-policy.html">Privacy policy</a>
+                            <a href="{{ route('privacy_policy') }}">Privacy policy</a>
                         </li>
                         <li>
-                            <a href="terms-conditions.html">Terms conditions</a>
+                            <a href="{{ route('terms_conditions') }}">Terms conditions</a>
                         </li>
                     </ul>
                 </div>

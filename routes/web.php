@@ -20,6 +20,10 @@ Route::controller(IndexController::class)->group(function () {
     Route::get('/', 'index')->name('home');
     Route::get('about-us', 'about')->name('about_us');
     Route::get('faq', 'faq')->name('faq');
+    Route::get('services', 'services')->name('services');
+    Route::get('why-us', 'why_us')->name('why_us');
+    Route::get('privacy-policy', 'privacy_policy')->name('privacy_policy');
+    Route::get('terms-conditions', 'terms_conditions')->name('terms_conditions');
     Route::get('blog-details/{slug?}', 'blog_details');
 });
 
