@@ -642,7 +642,7 @@
     <div class="container">
         <div class="section-title" data-cues="slideInUp">
             <h2>Find answers to your questions</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore eveniet quod mollitia asperiores ullam dolor corporis. vero nemo consectetur</p>
+            <p>Redlep specializes in innovative software solutions, offering web and app development tailored to transform and grow your business.</p>
         </div>
 
         <div class="faq-accordion">

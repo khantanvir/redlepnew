@@ -6,9 +6,15 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Blog\Blog;
 use App\Models\Blog\BlogCategory;
+use App\Repositories\Interfaces\BlogRepositoryInterface;
 
 class IndexController extends Controller
 {
+    private $blogRepository;
+
+    public function __construct(BlogRepositoryInterface $blogRepository){
+        $this->blogRepository = $blogRepository;
+    }
     public function index(){
         $data['page_title'] = "Redlep | Home";
         $data['blog_list'] = Blog::with('category')->orderBy('created_at','desc')->take(3)->get();
@@ -37,6 +43,15 @@ class IndexController extends Controller
     public function terms_conditions(){
         $data['page_title'] = "Redlep | Terms & Conditions";
         return view('home.terms_conditions',$data);
+    }
+    public function blog(Request $request){
+        $data['page_title'] = "Redlep | Blog";
+        $data['blog_list'] = $this->blogRepository->all_blog($request);
+        //dd($data['blog_list']);
+        $data['categories'] = $this->blogRepository->blog_categories();
+        $data['popular_blogs'] = $this->blogRepository->poular_blogs();
+        $data['unique_tags'] = $this->blogRepository->unique_tags();
+        return view('home.blog.blogs',$data);
     }
     public function blog_details($slug=NULL){
         $data['page_title'] = "Redlep | Blog Details";

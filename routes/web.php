@@ -25,6 +25,7 @@ Route::controller(IndexController::class)->group(function () {
     Route::get('privacy-policy', 'privacy_policy')->name('privacy_policy');
     Route::get('terms-conditions', 'terms_conditions')->name('terms_conditions');
     Route::get('blog-details/{slug?}', 'blog_details');
+    Route::get('blog', 'blog');
 });
 
 Route::controller(HomeController::class)->group(function () {
