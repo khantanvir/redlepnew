@@ -83,5 +83,9 @@ Route::get('/clear-cache', function () {
     Artisan::call('optimize:clear');
     return 'All Cached Cleared!';
 });
+Route::get('/composer-update', function () {
+    Artisan::call('composer update');
+    return 'Composer Updated Done!';
+});
 
 Route::group([], base_path('routes/admin.php'));
