@@ -56,7 +56,9 @@ class IndexController extends Controller
     public function blog_details($slug=NULL){
         $data['page_title'] = "Redlep | Blog Details";
         $data['blog'] = Blog::where('slug',$slug)->first();
-        $data['categories'] = BlogCategory::orderBy('id','desc')->get();
+        $data['categories'] = $this->blogRepository->blog_categories();
+        $data['popular_blogs'] = $this->blogRepository->poular_blogs();
+        $data['unique_tags'] = $this->blogRepository->unique_tags();
         return view('home.blog.blog_details',$data);
     }
 }

@@ -42,10 +42,6 @@
                                 <i class="ri-calendar-line"></i>
                                 {{ (!empty($blog->created_at)) ? date('F d Y', strtotime($blog->created_at)):'' }}
                             </li>
-                            <li>
-                                <i class="ri-question-answer-line"></i>
-                                <a href="blog-details.html">No comments</a>
-                            </li>
                         </ul>
                     </div>
 
@@ -73,87 +69,15 @@
                             @endforelse
                         </ul>
                     </div>
-
-                    <div class="blog-details-content content-9">
-                        <div class="comments">
-                            <h3>Comments (02)</h3>
-
-                            <ul>
-                                <li>
-                                    <img src="{{ asset('frontend/images/comments-img-1.jpg') }}" alt="Image">
-                                    <h3>Janie Abram</h3>
-                                    <span>CEO &amp; Founder</span>
-
-                                    <p>Lorem ipsum dolora sit amet, consectetur adipiscing elit sed do eiusmod tempor incdidunt labore et dolore magna aliqua. Veniam quis nostrud exercitation ullaco laboris</p>
-
-                                    <a href="blog-details.html">
-                                        <i class="bx bxs-share"></i>
-                                        Reply
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <img src="{{ asset('frontend/images/comments-img-2.jpg') }}" alt="Image">
-                                    <h3>Thomas Brand</h3>
-                                    <span>Manager</span>
-
-                                    <p>Lorem ipsum dolora sit amet, consectetur adipiscing elit sed do eiusmod tempor incdidunt labore et dolore magna aliqua. Veniam quis nostrud exercitation ullaco laboris</p>
-
-                                    <a href="blog-details.html">
-                                        <i class="bx bxs-share"></i>
-                                        Reply
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="blog-details-content content-8">
-                    <h3>Leave a reply</h3>
-
-                        <form>
-                            <p>Your email address will not be published. Required fields are marked*</p>
-                            <div class="row">
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" name="name" id="name" class="form-control" placeholder="Name*">
-                                    </div>
-                                </div>
-    
-                                <div class="col-lg-6 col-sm-6">
-                                    <div class="form-group">
-                                        <input type="email" name="email" id="email" class="form-control" placeholder="Email*">
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <input type="text" name="website" id="website" class="form-control" placeholder="Your Website Link*">
-                                    </div>
-                                </div>
-    
-                                <div class="col-lg-12 col-md-12">
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control" id="message" rows="8" placeholder="Comment"></textarea>
-                                    </div>
-                                </div>
-    
-                                <div class="col-lg-12 col-md-12">
-                                    <button type="submit" class="default-btn">
-                                        Post a comment
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
                 <div class="widget-sidebar">
                     <div class="sidebar-widget search">
-                        <form class="search-form">
-                            <input class="form-control" name="search" placeholder="Search..." type="text">
+                        <form method="get" action="{{ url('blog') }}" class="search-form">
+                            <input type="hidden" name="category_id" id="category_id" value="{{ (!empty($blog_list['get_category_id']))?$blog_list['get_category_id']:'' }}" />
+                            <input value="{{ (!empty($blog_list['get_search']))?$blog_list['get_search']:'' }}" class="form-control" name="search" id="search" placeholder="Search..." type="text">
                             <button class="search-button" type="submit">
                                 <i class="ri-search-line"></i>
                             </button>
@@ -166,7 +90,7 @@
                         <ul>
                             @forelse ($categories as $category)
                             <li>
-                                <a href="#">{{ $category->title ?? '' }}</a>
+                                <a onclick="searchCategory({{ $category->id }})" href="javascript://">{{ $category->title ?? '' }}</a>
                             </li>
                             @empty
                             @endforelse
@@ -176,27 +100,21 @@
                     <div class="sidebar-widget recent-post">
                         <h3 class="widget-title">Popular posts</h3>
                         <ul>
+                            @forelse ($popular_blogs as $pblog)
                             <li>
-                                <a href="blog-details.html">
-                                    Social media affect SEO?
+                                <a href="{{ url('blog-details/'.$pblog->slug) }}">
+                                    {{ App\Models\Blog\Blog::stringSubstrLimit($pblog->title,29) }}
+                                    @if(!empty($pblog->image))
+                                    <img style="width: 80px; height: 65px;" src="{{ asset($pblog->image) }}" alt="Image">
+                                    @else
                                     <img src="{{ asset('frontend/images/recent-post-1.jpg') }}" alt="Image">
+                                    @endif
                                 </a>
-                                <span>March 08, 2024</span>
+                                <span>{{ (!empty($pblog->created_at)) ? date('F d Y', strtotime($pblog->created_at)):'' }}</span>
                             </li>
-                            <li>
-                                <a href="blog-details.html">
-                                    Agency blogs you should read
-                                    <img src="{{ asset('frontend/images/recent-post-2.jpg') }}" alt="Image">
-                                </a>
-                                <span>March 07, 2024</span>
-                            </li>
-                            <li>
-                                <a href="blog-details.html">
-                                    Top marketing tips
-                                    <img src="{{ asset('frontend/images/recent-post-3.jpg') }}" alt="Image">
-                                </a>
-                                <span>March 06, 2024</span>
-                            </li>
+                            @empty
+                                
+                            @endforelse
                         </ul>
                     </div>
 
@@ -204,30 +122,13 @@
                         <h3>Popular tags</h3>
 
                         <ul>
+                            @forelse ($unique_tags as $tag)
                             <li>
-                                <a href="blog.html">Business</a>
+                                <a href="javascript://">{{ $tag ?? '' }}</a>
                             </li>
-                            <li>
-                                <a href="blog.html">Branding</a>
-                            </li>
-                            <li>
-                                <a href="blog.html">Freight</a>
-                            </li>
-                            <li>
-                                <a href="blog.html">Marketing</a>
-                            </li>
-                            <li>
-                                <a href="blog.html">SEO</a>
-                            </li>
-                            <li>
-                                <a href="blog.html">Web</a>
-                            </li>
-                            <li>
-                                <a href="blog.html">Digital</a>
-                            </li>
-                            <li>
-                                <a href="blog.html">Planing</a>
-                            </li>
+                            @empty
+                                
+                            @endforelse
                         </ul>
                     </div>
                 </div>
@@ -235,4 +136,10 @@
         </div>
     </div>
 </section>
+<script>
+    function searchCategory(id){
+        var search = $('#search').val();
+        window.location.href = "{{ url('blog') }}?category_id="+id+"&search="+search;
+    }
+</script>
 @endsection

@@ -63,8 +63,9 @@
             <div class="col-lg-4">
                 <div class="widget-sidebar">
                     <div class="sidebar-widget search">
-                        <form class="search-form">
-                            <input class="form-control" name="search" placeholder="Search..." type="text">
+                        <form method="get" class="search-form">
+                            <input type="hidden" name="category_id" id="category_id" value="{{ (!empty($blog_list['get_category_id']))?$blog_list['get_category_id']:'' }}" />
+                            <input value="{{ (!empty($blog_list['get_search']))?$blog_list['get_search']:'' }}" class="form-control" name="search" id="search" placeholder="Search..." type="text">
                             <button class="search-button" type="submit">
                                 <i class="ri-search-line"></i>
                             </button>
@@ -76,7 +77,7 @@
                         <ul>
                             @forelse ($categories as $category)
                             <li>
-                                <a href="#">{{ $category->title ?? '' }}</a>
+                                <a class="{{ (!empty($blog_list['get_category_id']) && $blog_list['get_category_id']==$category->id)?'color-yellow':'' }}" onclick="searchCategory({{ $category->id }})" href="javascript://">{{ $category->title ?? '' }}</a>
                             </li>
                             @empty
                                 
@@ -126,4 +127,15 @@
         </div>
     </div>
 </section>
+<style>
+    .color-yellow{
+        color: #ed8820 !important; 
+    }
+</style>
+<script>
+    function searchCategory(id){
+        var search = $('#search').val();
+        window.location.href = "{{ url('blog') }}?category_id="+id+"&search="+search;
+    }
+</script>
 @endsection

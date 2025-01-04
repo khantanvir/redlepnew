@@ -63,14 +63,14 @@
                                 <li class="nav-item">
                                     <a href="{{ route('services') }}" class="nav-link">Services</a>
                                 </li>
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a href="#" class="nav-link">Projects</a>
-                                </li>
+                                </li> --}}
                                 <li class="nav-item">
                                     <a href="{{ route('why_us') }}" class="nav-link">Why Us</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">Blog</a>
+                                    <a href="{{ url('blog') }}" class="nav-link">Blog</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">Contact</a>
@@ -145,7 +145,7 @@
                                 <a href="{{ route('faq') }}">FAQ</a>
                             </li>
                             <li>
-                                <a href="#">Blog</a>
+                                <a href="{{ url('blog') }}">Blog</a>
                             </li>
                         </ul>
                     </div>
