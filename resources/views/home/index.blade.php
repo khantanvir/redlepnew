@@ -379,16 +379,14 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single-team-member">
                     <img src="{{ asset('frontend/images/team/sohel.jpg') }}" alt="Image">
-
                     <div class="team-content">
                         <h3>Firdaus Sohel</h3>
-                        <span>Digital Marketor</span>
+                        <span>Digital Marketer</span>
 
                         <div class="team-social">
                             <a href="javascript:;" class="control">
                                 <i class="ri-share-fill"></i>
                             </a>
-
                             <ul>
                                 <li>
                                     <a href="https://www.facebook.com/sabujav" target="_blank">
@@ -405,7 +403,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-4 col-md-6">
                 <div class="single-team-member">
                     <img src="{{ asset('frontend/images/team-3.jpg') }}" alt="Image">
