@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/custom.css') }}">
     <link rel="icon" type="image/png" href="{{ asset('frontend/images/logo/favicon.png') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.css" integrity="sha512-DIW4FkYTOxjCqRt7oS9BFO+nVOwDL4bzukDyDtMO7crjUZhwpyrWBFroq+IqRe6VnJkTpRAS6nhDvf0w+wHmxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>{{ (!empty($page_title))?$page_title:'' }}</title>
 </head>
 <body>
@@ -73,7 +74,7 @@
                                     <a href="{{ url('blog') }}" class="nav-link">Blog</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">Contact</a>
+                                    <a href="{{ route('contact_us') }}" class="nav-link">Contact</a>
                                 </li>
                             </ul>
                             <div class="others-options">
@@ -216,6 +217,7 @@
         <i class="ri-arrow-up-s-fill"></i>
         <i class="ri-arrow-up-s-fill"></i>
     </div>
+    
     <script data-cfasync="false" src="{{ asset('frontend/js/email-decode.min.js') }}"></script><script src="{{ asset('frontend/js/jquery.min.js' ) }}"></script> 
     <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('frontend/js/meanmenu.min.js') }}"></script>
@@ -231,4 +233,8 @@
     <script src="{{ asset('frontend/js/contact-form-script.js') }}"></script>
     <script src="{{ asset('frontend/js/ajaxchimp.min.js') }}"></script>
     <script src="{{ asset('frontend/js/custom.js') }}"></script>
+    <script src="{{ asset('web/js/iziToast.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ asset('web/css/toastr.css') }}">
+	<script src="{{ asset('web/js/toastr.js') }}"></script>
+    @include('ajax.toastr')
 </body></html>

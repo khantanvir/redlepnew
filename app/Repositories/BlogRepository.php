@@ -2,8 +2,11 @@
 
 namespace App\Repositories;
 
+use App\Mail\contactMail;
 use App\Models\Blog\Blog;
 use App\Models\Blog\BlogCategory;
+use App\Models\Contact\Contact;
+use App\Models\Contact\Subscribe;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Session;
@@ -11,6 +14,7 @@ use App\Traits\Service;
 use App\Traits\Utility;
 use App\Models\Testimonial\Testimonial;
 use App\Repositories\Interfaces\BlogRepositoryInterface;
+use Illuminate\Support\Facades\Mail;
 
 class BlogRepository implements BlogRepositoryInterface{
     use Service, Utility;
@@ -62,6 +66,29 @@ class BlogRepository implements BlogRepositoryInterface{
         ->values();
 
         return $uniqueTags->toArray();
+    }
+    public function contact_data_post(Request $request){
+        $contact = new Contact();
+        $contact->name = $request->name;
+        $contact->email = $request->email;
+        $contact->phone = $request->phone;
+        $contact->subject = $request->subject;
+        $contact->message = $request->message;
+        $contact->save();
+        //make mail 
+        $details = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'subject' => $request->subject,
+            'message' => $request->message,
+        ];
+        //subscribe add
+        $sub = new Subscribe();
+        $sub->email = $request->email;
+        $sub->save();
+        Mail::to('aiub.tanvir@gmail.com')->send(new contactMail($details));
+        return true;
     }
     
     // public function add_post(Request $data){

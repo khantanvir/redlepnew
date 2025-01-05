@@ -9,4 +9,5 @@ Interface BlogRepositoryInterface{
     public function blog_categories();
     public function poular_blogs();
     public function unique_tags();
+    public function contact_data_post(Request $request);
 }

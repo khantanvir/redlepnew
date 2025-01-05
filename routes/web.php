@@ -26,6 +26,8 @@ Route::controller(IndexController::class)->group(function () {
     Route::get('terms-conditions', 'terms_conditions')->name('terms_conditions');
     Route::get('blog-details/{slug?}', 'blog_details');
     Route::get('blog', 'blog');
+    Route::get('contact', 'contact')->name('contact_us');
+    Route::post('contact-store', 'contact_store');
 });
 
 Route::controller(HomeController::class)->group(function () {
