@@ -1,6 +1,8 @@
 <!DOCTYPE html><html lang="zxx"><head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="fI4stg4NJj5KO_G_UEtgvLDWcHp-idYIJeKlh6q0kpo">
+    <title>{{ (!empty($page_title))?$page_title:'' }}</title>
     <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css' ) }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }}">
@@ -15,7 +17,6 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/custom.css') }}">
     <link rel="icon" type="image/png" href="{{ asset('frontend/images/logo/favicon.png') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.css" integrity="sha512-DIW4FkYTOxjCqRt7oS9BFO+nVOwDL4bzukDyDtMO7crjUZhwpyrWBFroq+IqRe6VnJkTpRAS6nhDvf0w+wHmxg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>{{ (!empty($page_title))?$page_title:'' }}</title>
 </head>
 <body>
     <div class="preloader">
@@ -94,7 +95,7 @@
         </div>
     </header>
     @yield('content')
-    
+
     <footer class="footer-area bg-color pt-100 pb-70">
         <div class="container">
             <div class="row" data-cues="slideInUp">
@@ -188,7 +189,7 @@
                             </button>
 
                             <div id="validator-newsletter" class="form-result"></div>
-                        </form>	
+                        </form>
                     </div>
                 </div>
             </div>
@@ -217,8 +218,8 @@
         <i class="ri-arrow-up-s-fill"></i>
         <i class="ri-arrow-up-s-fill"></i>
     </div>
-    
-    <script data-cfasync="false" src="{{ asset('frontend/js/email-decode.min.js') }}"></script><script src="{{ asset('frontend/js/jquery.min.js' ) }}"></script> 
+
+    <script data-cfasync="false" src="{{ asset('frontend/js/email-decode.min.js') }}"></script><script src="{{ asset('frontend/js/jquery.min.js' ) }}"></script>
     <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('frontend/js/meanmenu.min.js') }}"></script>
     <script src="{{ asset('frontend/js/owl.carousel.min.js') }}"></script>
