@@ -72,6 +72,9 @@
                 <li class="{{ (!empty($add_project) && $add_project==true)?'active':'' }}">
                     <a href="{{ URL::to('create-project') }}"> Create Project </a>
                 </li>
+                <li class="{{ (!empty($all_project) && $all_project==true)?'active':'' }}">
+                    <a href="{{ URL::to('all-project') }}"> All Project </a>
+                </li>
             </ul>
         </li>
         @endif

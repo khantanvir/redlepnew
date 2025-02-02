@@ -34,13 +34,19 @@ class ProjectController extends Controller{
         ]);
         Project::create_project($request);
         Session::flash('success', 'Project added successfully.');
-        return redirect()->back();
+        return redirect('all-project');
     }
-    public function all(){
+    public function all_project(){
         $data['project'] = true;
         $data['all_project'] = true;
         $data['page_title'] = "Project | All Project";
-        $data['projects'] = Project::all();
+        $data['projects'] = Project::all_project();
         return view('project.all',$data);
+    }
+    public function get_project($id){
+        $data['project'] = true;
+        $data['project_data'] = Project::get_project($id);
+        $data['page_title'] = "Project | Edit Project";
+        return view('project.edit',$data);
     }
 }

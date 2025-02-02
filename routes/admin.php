@@ -10,8 +10,8 @@ use App\Http\Controllers\Testimonial\TestimonialController;
 
 
 Route::middleware(['auth'])->group(function () {
-    
-    
+
+
 });
 
 Route::controller(TestimonialController::class)->group(function () {
@@ -21,4 +21,6 @@ Route::controller(TestimonialController::class)->group(function () {
 Route::controller(ProjectController::class)->group(function () {
     Route::get('create-project', 'create');
     Route::post('create-project-data-post', 'store');
+    Route::get('all-project', 'all_project');
+    Route::get('get-project/{id?}', 'get_project');
 });

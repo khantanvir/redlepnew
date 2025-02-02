@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Traits;
 
@@ -43,7 +43,7 @@ trait Project{
         $p->save();
         return true;
     }
-    public static function all(){
+    public static function all_project(){
         $data = ProjectProject::with('category')->orderBy('created_at','desc')->paginate(10);
         return $data;
     }
@@ -51,5 +51,9 @@ trait Project{
         $data = BlogCategory::where('status',0)->get();
         return $data;
     }
-    
+    public static function get_project($id){
+        $data = ProjectProject::with('category')->where('id',$id)->first();
+        return $data;
+    }
+
 }
