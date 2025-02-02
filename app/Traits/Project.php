@@ -43,6 +43,10 @@ trait Project{
         $p->save();
         return true;
     }
+    public static function all(){
+        $data = ProjectProject::with('category')->orderBy('created_at','desc')->paginate(10);
+        return $data;
+    }
     public static function get_categories(){
         $data = BlogCategory::where('status',0)->get();
         return $data;

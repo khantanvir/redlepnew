@@ -36,4 +36,11 @@ class ProjectController extends Controller{
         Session::flash('success', 'Project added successfully.');
         return redirect()->back();
     }
+    public function all(){
+        $data['project'] = true;
+        $data['all_project'] = true;
+        $data['page_title'] = "Project | All Project";
+        $data['projects'] = Project::all();
+        return view('project.all',$data);
+    }
 }
